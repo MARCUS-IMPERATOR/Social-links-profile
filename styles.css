@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+}
+*{
+    font-family: "Inter";
+    color: var(--White);
+    border-radius: 10px;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 5em;
+    background-color: var(--Off_Black);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    max-width: 700px;
+    min-width: 250px;
+    background-color: var(--Dark_Grey);
+    padding: 20px;
+}
+img{
+    border-radius: 50%;
+    max-width: 5em;
+}
+.name{
+    font-size: larger;
+    font-weight: 700;
+}
+.subcont{
+    background-color: var(--Grey);
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+.loc{
+    color: var(--Green);
+    font-size: 14px;
+    font-weight: 600;
+}
+.prof{
+    font-size: 10px;
+}
+.subcont:hover{
+    background-color: var(--Green);
+    color: var(--Off_Black);
+    cursor: pointer;
+}
+.subcont:focus{
+    background-color: var(--Green);
+    color: var(--Off_Black);
+    cursor: pointer;
+}
+@media screen and (max-width = 750) {
+    .container {
+        width: 95%;
+    }
+    .subcont{
+        width: 95%;
+    }
+    text{
+        font-size: 50%;
+    }
+}
